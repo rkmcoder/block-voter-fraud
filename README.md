@@ -1,5 +1,5 @@
 # Voter-Fraud-Twitter
-A chrome extension that blocks certain annoying text/<div> to appear on your twitter feed regarding voter fraud related to 2020 US Presidential election. For e.g You visit https://twitter.com/realDonaldTrump
+A chrome extension that blocks certain annoying text to appear on your twitter feed regarding voter fraud related to 2020 US Presidential election. For e.g You visit https://twitter.com/realDonaldTrump
 
 # Download this zip and extract. To load extention:
 
