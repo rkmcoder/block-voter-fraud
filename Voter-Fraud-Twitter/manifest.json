@@ -1,0 +1,12 @@
+{
+  "name": "Voter-Fraud-Twitter",
+  "version": "1.0",
+  "description": "Remove Voter Fraud Twitter flags",
+  "manifest_version": 2,
+  "content_scripts": [
+   {
+     "matches": ["*://twitter.com/*"],
+     "js": ["voter-fraud.js"]
+   }
+ ]
+}
