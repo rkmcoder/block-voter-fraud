@@ -1,13 +1,15 @@
 function remove_fraud() { 
-	var arr = document.getElementsByClassName("css-1dbjc4n r-1g94qm0");
-	for(e of arr){
-		e.innerHTML = ""; 
+	var a = document.getElementsByTagName("a");
+	for(e of a){
+		if(e.href.indexOf("/i/events/") > -1) {
+			e.innerHTML = ""; 
+		}
 	}
 }
 
 const targetNode = document.body;
  
-const config = { attributes: false, childList: true, subtree: true };
+const config = { attributes: true, childList: true, subtree: true , characterData: true};
 
 const callback = function(mutationsList, observer) {
     remove_fraud();
@@ -16,4 +18,3 @@ const callback = function(mutationsList, observer) {
 const observer = new MutationObserver(callback);
 
 observer.observe(targetNode, config);
-
